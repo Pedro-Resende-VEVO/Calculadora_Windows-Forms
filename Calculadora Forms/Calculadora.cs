@@ -81,7 +81,7 @@ namespace Calculadora_Forms
                         break;
 
                     default:
-                        MessageBox.Show("Insira uma operação para o cálculo");adsad
+                        MessageBox.Show("Insira uma operação para o cálculo");adsadASD
                         break;*/
             }
 
