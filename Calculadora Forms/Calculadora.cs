@@ -46,49 +46,57 @@ namespace Calculadora_Forms
             {
                 tbOperacao.Text = tbDisplay.Text + " +";
                 valor1 = double.Parse(tbDisplay.Text);
+                tbDisplay.Text = "";
             }
             else
             {
                 btIgual_Click(sender, e);
             }
-
-            tbDisplay.Text = "";
         }
 
         private void btIgual_Click(object sender, EventArgs e)
         {
             Calculos obj = new Calculos();
 
-            valor2 = double.Parse(tbDisplay.Text);
+            double result = 0;
 
-            switch (operacao)
+            if(tbDisplay.Text == "")
             {
-                case 1:
-                    double result = obj.Soma(valor1, valor2);
-                    tbDisplay.Text = result.ToString();
-                    break;
+               MessageBox.Show("Insira um valor");
+            }
+            else
+            {
+                valor2 = double.Parse(tbDisplay.Text);
 
-                    /*case 2:
-                        tbDisplay.Text = obj.Sub().ToString();
+                switch (operacao)
+                {
+                    case 1:
+                        result = obj.Soma(valor1, valor2);
+                        break;
+
+                    case 2:
+                        result = obj.Sub(valor1, valor2);
                         break;
 
                     case 3:
-                        tbDisplay.Text = obj.Multi().ToString();
+                        result = obj.Multi(valor1, valor2);
                         break;
 
                     case 4:
-                        tbDisplay.Text = obj.Divi().ToString();
+                        result = obj.Divi(valor1, valor2);
                         break;
 
                     default:
-                        MessageBox.Show("Insira uma operação para o cálculo");adsadASD
-                        break;*/
-            }
+                        MessageBox.Show("Insira uma operação para o cálculo");
+                        break;
+                }
 
-            valor1 = 0;
-            valor2 = 0;
-            operacao = 0;
-            tbOperacao.Text = "";
+                tbDisplay.Text = result.ToString();
+                valor1 = 0;
+                valor2 = 0;
+                operacao = 0;
+                tbOperacao.Text = "";
+            }
         }
     }
 
