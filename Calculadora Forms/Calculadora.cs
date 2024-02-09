@@ -64,25 +64,26 @@ namespace Calculadora_Forms
             switch (operacao)
             {
                 case 1:
-                    double result = obj.Soma(valor1,valor2);
+                    double result = obj.Soma(valor1, valor2);
                     tbDisplay.Text = result.ToString();
                     break;
 
-                /*case 2:
-                    tbDisplay.Text = obj.Sub().ToString();
-                    break;
+                    /*case 2:
+                        tbDisplay.Text = obj.Sub().ToString();
+                        break;
 
-                case 3:
-                    tbDisplay.Text = obj.Multi().ToString();
-                    break;
+                    case 3:
+                        tbDisplay.Text = obj.Multi().ToString();
+                        break;
 
-                case 4:
-                    tbDisplay.Text = obj.Divi().ToString();
-                    break;
+                    case 4:
+                        tbDisplay.Text = obj.Divi().ToString();
+                        break;
 
-                default:
-                    MessageBox.Show("Insira uma operação para o cálculo");adsad
-                    break;*/
+                    default:
+                        MessageBox.Show("Insira uma operação para o cálculo");adsad
+                        break;*/
+            }
 
             valor1 = 0;
             valor2 = 0;
