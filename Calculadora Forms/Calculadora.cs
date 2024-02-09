@@ -14,6 +14,13 @@ namespace Calculadora_Forms
     {
         bool ordem = true;
 
+        public double valor1;
+
+        public double valor2;
+
+        public int operacao;
+
+
         public Calculadora()
         {
             InitializeComponent();
@@ -33,12 +40,12 @@ namespace Calculadora_Forms
         {
             Calculos obj = new Calculos();
 
-            obj.operacao = 1;
+            operacao = 1;
 
-            if(obj.valor1 == 0) //Erro aqui, assim o valor vai ser sempre 0 pois ele é inserido só dentro do if
+            if(valor1 == 0)
             {
                 tbOperacao.Text = tbDisplay.Text + " +";
-                obj.valor1 = int.Parse(tbDisplay.Text);
+                valor1 = double.Parse(tbDisplay.Text);
             }
             else
             {
@@ -52,15 +59,16 @@ namespace Calculadora_Forms
         {
             Calculos obj = new Calculos();
 
-            obj.valor2 = int.Parse(tbDisplay.Text);
+            valor2 = double.Parse(tbDisplay.Text);
 
-            switch (obj.operacao)
+            switch (operacao)
             {
                 case 1:
-                    tbDisplay.Text = obj.Soma().ToString();
+                    double result = obj.Soma(valor1,valor2);
+                    tbDisplay.Text = result.ToString();
                     break;
 
-                case 2:
+                /*case 2:
                     tbDisplay.Text = obj.Sub().ToString();
                     break;
 
@@ -74,40 +82,35 @@ namespace Calculadora_Forms
 
                 default:
                     MessageBox.Show("Insira uma operação para o cálculo");
-                    break;
+                    break;*/
             }
 
-            obj.valor1 = 0;
-            obj.valor2 = 0;
-            obj.operacao = 0;
+            valor1 = 0;
+            valor2 = 0;
+            operacao = 0;
             tbOperacao.Text = "";
         }
     }
 
     class Calculos
     {
-        public double valor1;
 
-        public double valor2;
-
-        public int operacao;
-
-        public double Soma()
+        public double Soma(double valor1, double valor2)
         {
             return valor1 + valor2;
         }
 
-        public double Sub()
+        public double Sub(double valor1, double valor2)
         {
             return valor1 - valor2;
         }
 
-        public double Multi()
+        public double Multi(double valor1, double valor2)
         {
             return valor1 * valor2;
         }
 
-        public double Divi()
+        public double Divi(double valor1, double valor2)
         {
             if(valor1 == 0 || valor2 == 0)
             {
