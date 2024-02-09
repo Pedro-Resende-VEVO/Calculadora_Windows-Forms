@@ -35,7 +35,7 @@ namespace Calculadora_Forms
 
             obj.operacao = 1;
 
-            if(obj.valor1 == 0) //Erro aqui, assim o valor vai ser sempre 0 pois ele é inserido só dentro do if
+            if(obj.valor1 == 0) //Erro aqui, assim o valor vai ser sempre 0 pois ele é inserido só dentro do ifdasd
             {
                 tbOperacao.Text = tbDisplay.Text + " +";
                 obj.valor1 = int.Parse(tbDisplay.Text);
