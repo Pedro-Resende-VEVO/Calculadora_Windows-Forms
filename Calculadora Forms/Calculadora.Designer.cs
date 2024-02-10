@@ -172,42 +172,46 @@
             // 
             // btMais
             // 
+            this.btMais.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btMais.Location = new System.Drawing.Point(258, 286);
             this.btMais.Name = "btMais";
             this.btMais.Size = new System.Drawing.Size(75, 48);
             this.btMais.TabIndex = 12;
             this.btMais.Text = "+";
-            this.btMais.UseVisualStyleBackColor = true;
+            this.btMais.UseVisualStyleBackColor = false;
             this.btMais.Click += new System.EventHandler(this.btMais_Click);
             // 
             // btIgual
             // 
+            this.btIgual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btIgual.Location = new System.Drawing.Point(258, 340);
             this.btIgual.Name = "btIgual";
             this.btIgual.Size = new System.Drawing.Size(75, 48);
             this.btIgual.TabIndex = 13;
             this.btIgual.Text = "=";
-            this.btIgual.UseVisualStyleBackColor = true;
+            this.btIgual.UseVisualStyleBackColor = false;
             this.btIgual.Click += new System.EventHandler(this.btIgual_Click);
             // 
             // btMenos
             // 
+            this.btMenos.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btMenos.Location = new System.Drawing.Point(258, 235);
             this.btMenos.Name = "btMenos";
             this.btMenos.Size = new System.Drawing.Size(75, 46);
             this.btMenos.TabIndex = 14;
             this.btMenos.Text = "-";
-            this.btMenos.UseVisualStyleBackColor = true;
+            this.btMenos.UseVisualStyleBackColor = false;
             this.btMenos.Click += new System.EventHandler(this.btMenos_Click);
             // 
             // btVezes
             // 
+            this.btVezes.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btVezes.Location = new System.Drawing.Point(258, 187);
             this.btVezes.Name = "btVezes";
             this.btVezes.Size = new System.Drawing.Size(75, 42);
             this.btVezes.TabIndex = 15;
             this.btVezes.Text = "x";
-            this.btVezes.UseVisualStyleBackColor = true;
+            this.btVezes.UseVisualStyleBackColor = false;
             this.btVezes.Click += new System.EventHandler(this.btVezes_Click);
             // 
             // btPonto
@@ -232,42 +236,46 @@
             // 
             // btDividir
             // 
+            this.btDividir.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btDividir.Location = new System.Drawing.Point(258, 139);
             this.btDividir.Name = "btDividir";
             this.btDividir.Size = new System.Drawing.Size(75, 42);
             this.btDividir.TabIndex = 18;
             this.btDividir.Text = "/";
-            this.btDividir.UseVisualStyleBackColor = true;
+            this.btDividir.UseVisualStyleBackColor = false;
             this.btDividir.Click += new System.EventHandler(this.btDividir_Click);
             // 
             // btApagar
             // 
+            this.btApagar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btApagar.Location = new System.Drawing.Point(174, 139);
             this.btApagar.Name = "btApagar";
             this.btApagar.Size = new System.Drawing.Size(75, 42);
             this.btApagar.TabIndex = 19;
             this.btApagar.Text = "Apagar";
-            this.btApagar.UseVisualStyleBackColor = true;
+            this.btApagar.UseVisualStyleBackColor = false;
             this.btApagar.Click += new System.EventHandler(this.btApagar_Click);
             // 
             // btLimpar
             // 
+            this.btLimpar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btLimpar.Location = new System.Drawing.Point(93, 139);
             this.btLimpar.Name = "btLimpar";
             this.btLimpar.Size = new System.Drawing.Size(75, 42);
             this.btLimpar.TabIndex = 20;
             this.btLimpar.Text = "Limpar";
-            this.btLimpar.UseVisualStyleBackColor = true;
+            this.btLimpar.UseVisualStyleBackColor = false;
             this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
             // 
             // btReset
             // 
+            this.btReset.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btReset.Location = new System.Drawing.Point(12, 139);
             this.btReset.Name = "btReset";
             this.btReset.Size = new System.Drawing.Size(75, 42);
             this.btReset.TabIndex = 21;
             this.btReset.Text = "Resetar";
-            this.btReset.UseVisualStyleBackColor = true;
+            this.btReset.UseVisualStyleBackColor = false;
             this.btReset.Click += new System.EventHandler(this.btReset_Click);
             // 
             // Calculadora
