@@ -33,10 +33,16 @@ Depende do click nos devidos botões ao invés do próprio teclado para inserir 
 ## Requisitos específicos 
 
 
-### Requisitos funcionais, não funcionais e Interface: 
-- Tratamento quanto a erros lógicos e operacionais;
-- Interface gráfica intuitíva e responsiva.
- 
+### Requisitos funcionais, não funcionais: 
+1. Funcionais
+   - Tratamento quanto a erros lógicos e operacionais;
+   - Realizar os comandos correspondentes a cada botão;
+   - Exibir os instrunções inseridas de forma intermitente;
+  
+2. Não Funcionais
+   - Responsividade;
+   - Facilidade de uso.
+     
 
 ## Apêndices 
 Foi um projeto divertido de se fazer, particularmente rápido de ser feito, porém satisfatório ao ver os conhecimentos que tenho de C# serem aplicados em outros contextos com inclusive outras regras e funções ao meu dispor. Como amante de interface gráfica, eu sempre me interessei no Windows Forms, entretanto a parte Web do C# combina mais comigo nesse princípio. Tenho ao que agradecer a esse projeto, por abrir minha perspectiva aos meus interesses e gostos na programação. Experenciar novas formas de programar com certeza é a chave que me incentiva a aprender cada vez mais, e foi nesse projeto que isso me fez sentido.
